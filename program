@@ -1,0 +1,81 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main() {
+     //created by kelompok 4 TPB 7 BM
+    //Sri Dian Chintia (122430031) , Salama Qodlam Fadila (122430042), Delvino Ardi Tama (122430050)
+    
+    // deklarasi variabel
+    string nama, penyakit;
+    int umur, poin[10], total_poin = 0;
+    
+    // input data diri
+    cout << "Selamat datang di Stress Level Test. Silakan isi data diri Anda terlebih dahulu." << endl;
+    cout << "Nama : ";
+    getline(cin, nama);
+    cout << "Umur : ";
+    cin >> umur;
+    cin.ignore();
+    cout << "Penyakit bawaan : ";
+    getline(cin, penyakit);
+    
+    // input jawaban dan menghitung total poin
+    for (int i = 0; i < 10; i++) {
+        cout << i+1 << ". Apakah Anda pernah merasa ";
+        if (i == 0) cout << "kesal karena sesuatu terjadi secara tidak terduga?";
+        else if (i == 1) cout << "tidak dapat mengendalikan hal-hal penting dalam hidup Anda?";
+        else if (i == 2) cout << "gelisah dan stres?";
+        else if (i == 3) cout << "yakin terhadap kemampuan Anda dalam menangani masalah pribadi?";
+        else if (i == 4) cout << "yakin bahwa segala sesuatu berjalan sesuai keinginan Anda?";
+        else if (i == 5) cout << "tidak dapat mengatasi segala hal yang harus dilakukan?";
+        else if (i == 6) cout << "mampu mengendalikan hal-hal yang mengganggu dalam hidup Anda?";
+        else if (i == 7) cout << "dapat mengendalikan hal-hal dalam hidup Anda?";
+        else if (i == 8) cout << "marah karena hal-hal terjadi di luar kendali Anda?";
+        else if (i == 9) cout << "kesulitan sangat banyak sehingga Anda tidak mampu mengatasinya?";
+        cout << endl << "A. Tidak Pernah" << endl;
+        cout << "B. Jarang" << endl;
+        cout << "C. Kadang-kadang" << endl;
+        cout << "D. Cukup sering" << endl;
+        cout << "E. Sangat sering" << endl;
+        cout << "Jawaban : ";
+        char jawaban;
+        cin >> jawaban;
+        cin.ignore();
+        switch (jawaban) {
+            case 'A':
+            case 'a':
+                poin[i] = 1;
+                break;
+            case 'B':
+            case 'b':
+                poin[i] = 2;
+                break;
+            case 'C':
+            case 'c':
+                poin[i] = 3;
+                break;
+            case 'D':
+            case 'd':
+                poin[i] = 4;
+                break;
+            case 'E':
+            case 'e':
+                poin[i] = 5;
+                break;
+            default:
+                poin[i] = 0;
+                break;
+        }
+        total_poin += poin[i];
+    }
+    
+// menampilkan hasil
+    cout << endl << "Jumlah Poin Anda= " << total_poin << endl;
+    
+    cout << "Poin Penilaian = 0-13 (RENDAH)" << endl;
+    cout << "Poin Penilaian = 13-27 (SEDANG)" << endl;
+    cout << "Poin Penilaian = 27-50 (TINGGI)" << endl;
+    
+}
