@@ -37,6 +37,6 @@ Oleh karena itu, kami menggunakan Switch Case untuk memisahkan poin. Setiap jawa
 | File |      link     |
 | ------ | ------ |
 | Laporan | tempel link disini |
-| Program | https://github.com/marselferrys/TUBES-PKS-2 |
+| Program | [https://github.com/delvinoAT/TUBES-PKS-2]|
 | Program running | https://replit.com/@Marchel-Samosir/Tugas-Besar-PKS-2 |
 | Video | tempel link disini |
