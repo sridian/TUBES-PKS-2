@@ -7,8 +7,8 @@
 
 ## Pengantar Komputer & Software 2
 - Nama Dosen: Asep Nurul Ajiid Mustofa, S.T., M.T.
-- nama asisten praktikum 1: Marchel Timoteus S
-- nama asistem praktikum 2: David Panondang Sinaga
+- Nama asisten praktikum 1: Marchel Timoteus S
+- Nama asistem praktikum 2: David Panondang Sinaga
 
 ## Cara Kerja Program
 Program Stress Level Test ini menggunakan metode kuisioner berjumlah 10 pertanyaan. Kuisioner ini didapat dari situs atau website kedokteran yang terpercaya. Beberapa pertanyaan yang merujuk kepada ciri-ciri pertanda stress akan dijawab oleh pengguna. Setiap jawaban memiliki poin yang diakumulasikan di akhir program dan menjadi tolak ukur tingkat stress pengguna program.
