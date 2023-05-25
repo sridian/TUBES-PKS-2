@@ -14,7 +14,7 @@
 Program Stress Level Test ini menggunakan metode kuisioner berjumlah 10 pertanyaan. Kuisioner ini didapat dari situs atau website kedokteran yang terpercaya. Beberapa pertanyaan yang merujuk kepada ciri-ciri pertanda stress akan dijawab oleh pengguna. Setiap jawaban memiliki poin yang diakumulasikan di akhir program dan menjadi tolak ukur tingkat stress pengguna program.
 Pada program ini, kami menggunakan beberapa operasi dan tipe data C++. 
 1. Array, digunakan untuk menyimpan poin dari setiap pertanyaan.
-2. Perulangan For, digunakan untuk mencetak pertanyaan 1 sampai 10.
+2. Perulangan For, digunakan untuk mencetak pertanyaan 1 sampai 10. Perulangan Do-While digunakan untuk mengulang program.
 3. 	Percabangan If, digunakan untuk menampilkan deretan pertanyaan.
 4. Percabangan Switch Case digunakan untuk memasukkan poin dari opsi jawaban.
 
