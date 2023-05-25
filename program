@@ -79,7 +79,7 @@ int main() {
     else if (total_poin <= 50)
     cout << "Level stress anda sekarang berada pada tingkat tinggi"<< endl;
     
-    cout <<"/n"<< "Apabila anda memiliki penyakit bawaan dan jika terjadi gangguan klinis segera lakukan konsultasi ke dokter" << endl;
+    cout << "Apabila anda memiliki penyakit bawaan dan jika terjadi gangguan klinis segera lakukan konsultasi ke dokter" << endl;
 
 //pengulangan program
 cout<<endl;
