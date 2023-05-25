@@ -4,13 +4,12 @@
 using namespace std;
 
 int main() {
-     //created by kelompok 4 TPB 7 BM
-    //Sri Dian Chintia (122430031) , Salama Qodlam Fadila (122430042), Delvino Ardi Tama (122430050)
-    
     // deklarasi variabel
-    string nama, penyakit;
+    string nama,penyakit;
     int umur, poin[10], total_poin = 0;
+    int pilihan;
     
+    do {
     // input data diri
     cout << "Selamat datang di Stress Level Test. Silakan isi data diri Anda terlebih dahulu." << endl;
     cout << "Nama : ";
@@ -18,7 +17,7 @@ int main() {
     cout << "Umur : ";
     cin >> umur;
     cin.ignore();
-    cout << "Penyakit bawaan : ";
+    cout << "Penyakit bawaan (isi tidak ada jika tidak memiliki penyakit bawaan) : ";
     getline(cin, penyakit);
     
     // input jawaban dan menghitung total poin
@@ -73,9 +72,23 @@ int main() {
     
 // menampilkan hasil
     cout << endl << "Jumlah Poin Anda= " << total_poin << endl;
+    if (total_poin <= 13)
+        cout << "Level stress anda sekarang berada pada tingkat rendah"<< endl;
+    else if (total_poin <= 27)
+        cout << "Level stress anda sekarang berada pada tingkat sedang"<< endl;
+    else if (total_poin <= 50)
+    cout << "Level stress anda sekarang berada pada tingkat tinggi"<< endl;
     
-    cout << "Poin Penilaian = 0-13 (RENDAH)" << endl;
-    cout << "Poin Penilaian = 13-27 (SEDANG)" << endl;
-    cout << "Poin Penilaian = 27-50 (TINGGI)" << endl;
-    
+    cout <<"/n"<< "Apabila anda memiliki penyakit bawaan dan jika terjadi gangguan klinis segera lakukan konsultasi ke dokter" << endl;
+
+//pengulangan program
+cout<<endl;
+     cout << "Apakah anda ingin mengulang program? ";
+   cout << "ketik 1 jika ya atau 2 jika tidak"<<endl;
+   cout << "Pilihan anda :";
+   cin >> pilihan;
+   cout<<endl;
+   }
+   while (pilihan == 1);
+    return 0;
 }
